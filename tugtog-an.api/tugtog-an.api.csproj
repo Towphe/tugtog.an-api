@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="dotnetenv" Version="3.0.0" />
+    <PackageReference Include="NewtonSoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <PropertyGroup>
