@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugtog-an.api", "tugtog-an.api\tugtog-an.api.csproj", "{A0269768-4D21-4059-B029-3B99680A1CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugtog-an.data", "tugtog-an.data\tugtog-an.data.csproj", "{2A80A8D5-2DDB-425C-9E7D-AA5FD6315688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugtog-an.domain", "tugtog-an.domain\tugtog-an.domain.csproj", "{8DB42087-E6C3-49D6-A88C-8DBE32BC0C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugtog-an.service", "tugtog-an.service\tugtog-an.service.csproj", "{33279903-B23A-4DFD-A137-904A3DECFED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugtog-an.tests", "tugtog-an.tests\tugtog-an.tests.csproj", "{66F36DD8-4AAB-4E7B-A9D1-16C9F631B63D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +20,27 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0269768-4D21-4059-B029-3B99680A1CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0269768-4D21-4059-B029-3B99680A1CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0269768-4D21-4059-B029-3B99680A1CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0269768-4D21-4059-B029-3B99680A1CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A80A8D5-2DDB-425C-9E7D-AA5FD6315688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A80A8D5-2DDB-425C-9E7D-AA5FD6315688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A80A8D5-2DDB-425C-9E7D-AA5FD6315688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A80A8D5-2DDB-425C-9E7D-AA5FD6315688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB42087-E6C3-49D6-A88C-8DBE32BC0C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB42087-E6C3-49D6-A88C-8DBE32BC0C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB42087-E6C3-49D6-A88C-8DBE32BC0C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB42087-E6C3-49D6-A88C-8DBE32BC0C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33279903-B23A-4DFD-A137-904A3DECFED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33279903-B23A-4DFD-A137-904A3DECFED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33279903-B23A-4DFD-A137-904A3DECFED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33279903-B23A-4DFD-A137-904A3DECFED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F36DD8-4AAB-4E7B-A9D1-16C9F631B63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F36DD8-4AAB-4E7B-A9D1-16C9F631B63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F36DD8-4AAB-4E7B-A9D1-16C9F631B63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F36DD8-4AAB-4E7B-A9D1-16C9F631B63D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
