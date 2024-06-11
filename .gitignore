@@ -1,0 +1,6 @@
+# local files
+**obj
+**bin
+
+# environment files
+**.env
