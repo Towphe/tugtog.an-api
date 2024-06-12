@@ -10,10 +10,10 @@ public class SpotifyAccessTokenAttribute : Attribute, IAsyncActionFilter
 {
     public async Task OnActionExecutionAsync(
         ActionExecutingContext context, ActionExecutionDelegate next)
-    {
-        var headerValues = context.HttpContext.Request.Headers.GetCommaSeparatedValues("Spotify-Access-Token");
+    {   
+        var accessToken = context.HttpContext.Request.Cookies["sat"];
         
-        if (headerValues.Length == 0){
+        if (accessToken == null){
             // unauthenticated
             context.HttpContext.Response.Clear();
             context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
