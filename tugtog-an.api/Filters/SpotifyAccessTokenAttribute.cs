@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System.Net;
 using System.Text;
 using Newtonsoft.Json;
+using tugtog_an.service.spotify;
+using Microsoft.Net.Http.Headers;
 
 namespace tugtog_an.api.Filters;
 
@@ -11,9 +13,9 @@ public class SpotifyAccessTokenAttribute : Attribute, IAsyncActionFilter
     public async Task OnActionExecutionAsync(
         ActionExecutingContext context, ActionExecutionDelegate next)
     {   
-        var accessToken = context.HttpContext.Request.Cookies["sat"];
+        var spotifyAccessToken = context.HttpContext.Request.Cookies["sat"];
         
-        if (accessToken == null){
+        if (spotifyAccessToken == null){
             // unauthenticated
             context.HttpContext.Response.Clear();
             context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
