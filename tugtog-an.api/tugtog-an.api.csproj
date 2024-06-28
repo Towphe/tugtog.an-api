@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="dotnetenv" Version="3.0.0" />
     <PackageReference Include="NewtonSoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -14,14 +14,20 @@ builder.Services.AddHttpsRedirection(opts => {
 });
 
 builder.Services.AddScoped<ISpotifyHandler, SpotifyHandler>();
-
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
+
 
 builder.Services.AddDbContext<TugtoganContext>(opts => {
     opts.UseNpgsql();
 });
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment()){
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
